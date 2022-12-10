@@ -17,13 +17,9 @@ public class Task1 {
     }
 
     public boolean isPolindrom(String source) {
-        boolean flag = true;
         for (int i = 0; i < source.length() / 2; i++) {
-            if (source.charAt(i) != source.charAt(source.length() - 1 - i)) {
-                flag = false;
-                break;
-            }
+            if (source.charAt(i) != source.charAt(source.length() - 1 - i)) return false;
         }
-        return flag;
+        return true;
     }
 }
